@@ -216,7 +216,7 @@ const Profile: React.FC = () => {
               <SkillsItem name="Netlify" icon="assets/netlifyLogo.png" />
               <SkillsItem name="Heroku" icon="assets/herokuLogo.png" />
               <SkillsItem name="DigitalOcean" icon="assets/digitalOcean.png" />
-              <SkillsItem name="Vercel" icon="assets/vercel.svg" />
+              <SkillsItem name="Vercel" icon="assets/vercel.png" />
             </Box>
           </Grid>
         </Grid>
