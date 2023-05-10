@@ -37,7 +37,7 @@ const Experience: React.FC = () => {
           startDate="12.09.2022"
           endDate="present"
           description="At Victory Square Partners I'm currently working for an external client. Our team is developing a web application that's responsible with data ingestion from different clients. My main responsabilities are to implement new components and pages in React and fix bugs."
-          technologies="HTML, CSS, JavaScript, Typescript, React, ElasticUI, JIRA, Github"
+          technologies="HTML, CSS, JavaScript, Typescript, React, ElasticUI, JIRA, Github, OpenSearch, OpenSearch Dashboards"
         />
         <WorkExperienceCard
           title="Junior Front-End Developer"

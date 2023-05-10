@@ -68,7 +68,7 @@ const Profile: React.FC = () => {
           align="center"
           sx={darkMode ? { color: "white" } : { color: "#004A55" }}
         >
-          I'm a Front-end Web Developer who builds web applications that run
+          I'm a Full Stack Web Developer who builds web applications that run
           across platforms and devices!
         </Typography>
         <Typography
@@ -162,6 +162,7 @@ const Profile: React.FC = () => {
               <SkillsItem name="CSS" icon="assets/cssLogo.png" />
               <SkillsItem name="Javascript" icon="assets/javascriptLogo.png" />
               <SkillsItem name="Typescript" icon="assets/typescriptLogo.png" />
+              <SkillsItem name="SQL" icon="assets/sql.png" />
             </Box>
           </Grid>
           <Grid
@@ -184,6 +185,7 @@ const Profile: React.FC = () => {
                 Frameworks
               </Typography>
               <SkillsItem name="React" icon="assets/reactLogo.png" />
+              <SkillsItem name="NextJS" icon="assets/nextjs.png" />
               <SkillsItem name="Node" icon="assets/nodeLogo.png" />
               <SkillsItem name="Express" icon="assets/expressLogo.png" />
             </Box>
@@ -210,8 +212,11 @@ const Profile: React.FC = () => {
               </Typography>
               <SkillsItem name="VS Code" icon="assets/vscodeLogo.png" />
               <SkillsItem name="Git" icon="assets/git.png" />
+              <SkillsItem name="Figma" icon="assets/figma.png" />
               <SkillsItem name="Netlify" icon="assets/netlifyLogo.png" />
               <SkillsItem name="Heroku" icon="assets/herokuLogo.png" />
+              <SkillsItem name="DigitalOcean" icon="assets/digitalOcean.png" />
+              <SkillsItem name="Vercel" icon="assets/vercel.svg" />
             </Box>
           </Grid>
         </Grid>
