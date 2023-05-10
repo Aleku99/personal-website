@@ -30,8 +30,16 @@ const Projects: React.FC = () => {
           My projects
         </Typography>
         <ProjectCard
+          title="luxury-detailing"
+          description="This project was done for an acquaintance that decided to open a car detailing business and needed a web app for it. Front-end was done in NextJS 13 beta and hosted on Vercel. For the backend I used Strapi CMS so that the client would be able to upload images and services that are displayed in the web app, and it is hosted on DigitalOcean App Platform. As for the database, I used Postgres, which is hosted on aiven.io "
+          technologies="HTML, CSS, JavaScript, Typescript, NextJS, TailwindCSS, Strapi, PostgreSQL"
+          githubUrl="https://github.com/Aleku99/luxury-detailing-fe"
+          githubUrl2="https://github.com/Aleku99/luxury-detailing-be"
+          websiteUrl="https://www.luxurydetailing.ro/"
+        />
+        <ProjectCard
           title="personal-website"
-          description="You are currently looking at it. I decided to create this project at the moment I felt confident enough to take side projects, beside my 9 to 5. This is a work in progress."
+          description="You are currently looking at it. I decided to create this project at the moment I felt confident enough to take side projects, beside my main job. This is a work in progress."
           technologies="HTML, CSS, JavaScript, Typescript, React, MaterialUI"
           githubUrl="https://github.com/Aleku99/personal-website"
           websiteUrl="#"
