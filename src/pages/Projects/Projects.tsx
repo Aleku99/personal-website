@@ -31,10 +31,9 @@ const Projects: React.FC = () => {
         </Typography>
         <ProjectCard
           title="luxury-detailing"
-          description="This project was done for an acquaintance that decided to open a car detailing business and needed a web app for it. Front-end was done in NextJS 13 beta and hosted on Vercel. For the backend I used Strapi CMS so that the client would be able to upload images and services that are displayed in the web app, and it is hosted on DigitalOcean App Platform. As for the database, I used Postgres, which is hosted on aiven.io "
-          technologies="HTML, CSS, JavaScript, Typescript, NextJS, TailwindCSS, Strapi, PostgreSQL"
+          description="This project was done for an acquaintance that decided to open a car detailing business and needed a website for it."
+          technologies="HTML, CSS, JavaScript, Typescript, NextJS, TailwindCSS"
           githubUrl="https://github.com/Aleku99/luxury-detailing-fe"
-          githubUrl2="https://github.com/Aleku99/luxury-detailing-be"
           websiteUrl="https://www.luxurydetailing.ro/"
         />
         <ProjectCard
