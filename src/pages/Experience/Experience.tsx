@@ -40,6 +40,15 @@ const Experience: React.FC = () => {
           technologies="HTML, CSS, JavaScript, Typescript, React, ElasticUI, JIRA, Github, OpenSearch, OpenSearch Dashboards"
         />
         <WorkExperienceCard
+          title="Full Stack Web Developer"
+          company="Codemelt"
+          location="Timisoara"
+          startDate="22.05.2023"
+          endDate="24.07.2023"
+          description="At Codemelt, I've worked as an independent contractor. The web app we developed was a trading platform that used Solana (SOL) and NFTs as their main currencies."
+          technologies="HTML, CSS, JavaScript, Typescript, React, Tailwind, NestJS, Prisma ORM, Linear, Gitlab"
+        />
+        <WorkExperienceCard
           title="Junior Front-End Developer"
           company="Endava"
           location="Timisoara"
