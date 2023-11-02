@@ -188,6 +188,7 @@ const Profile: React.FC = () => {
               <SkillsItem name="NextJS" icon="assets/nextjs.png" />
               <SkillsItem name="Node" icon="assets/nodeLogo.png" />
               <SkillsItem name="Express" icon="assets/expressLogo.png" />
+              <SkillsItem name="NestJS" icon="assets/nestjsLogo.png" />
             </Box>
           </Grid>
           <Grid
