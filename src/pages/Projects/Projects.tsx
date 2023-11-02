@@ -27,8 +27,20 @@ const Projects: React.FC = () => {
               : { color: "#004A55", marginBottom: "2rem" }
           }
         >
-          My projects
+          Projects and freelance work
         </Typography>
+        <ProjectCard
+          title="confectii-metalice"
+          description="This project is currently a work in progress. I was contracted to build a presentation website for someone who opened a new business. The app is front-end only, has 4 pages: a home page, services page,  gallery page and contact page."
+          technologies="Typescript, React, Tailwind, EmailJS, Netlify"
+          githubUrl="https://github.com/Aleku99/gelato-divino"
+          websiteUrl="https://confectiimetalicecs.ro/"
+        />
+        <ProjectCard
+          title="looties"
+          description="looties is a new Web3 game that offers a variety of NFT loot boxes that have the chance of dropping highly collectible NFTs. Users could enter the app, log in using one of their Solana Crypto Wallets, deposit Solana(SOL) and NFTs from their wallets, buy app tokens using SOL, and create their own lootboxes. I have mainly worked to the front-end, where I implemented the app from the ground using React. I have also contributed to the back-end, where i wrote a few endpoints in the newly-created REST API."
+          technologies="Typescript, React, Tailwind, NestJS, Prisma ORM, Linear, Gitlab, Digital Ocean"
+        />
         <ProjectCard
           title="luxury-detailing"
           description="This project was done for an acquaintance that decided to open a car detailing business and needed a website for it."

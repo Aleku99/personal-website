@@ -26,7 +26,7 @@ interface Props {
   title: string;
   description: string;
   technologies: string;
-  githubUrl: string;
+  githubUrl?: string;
   githubUrl2?: string;
   websiteUrl?: string;
 }
