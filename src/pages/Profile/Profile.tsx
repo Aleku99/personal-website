@@ -24,7 +24,7 @@ const Profile: React.FC = () => {
 
   const openCV = (): void => {
     window.open(
-      "https://drive.google.com/file/d/1HVoH3nixD4CCNliZnYGiAVsLC-HFmbd4/view?usp=share_link",
+      "https://drive.google.com/file/d/1OX_LWVupCvU2wyg6zYBMO9k-vElzacu3/view?usp=sharing",
       "_blank"
     );
   };
