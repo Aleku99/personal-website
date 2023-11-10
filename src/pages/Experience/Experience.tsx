@@ -35,8 +35,11 @@ const Experience: React.FC = () => {
           company="Victory Square Partners"
           location="Timisoara"
           startDate="12.09.2022"
-          endDate="present"
-          description="At Victory Square Partners I'm currently working for an external client. Our team is developing a web application that's responsible with data ingestion from different clients. My main responsabilities are to implement new components and pages in React and fix bugs."
+          endDate="29.11.2023"
+          description="At Victory Square Partners I'm  worked for an external client. Our team is
+          developing a web application that's responsible with data ingestion from different clients.
+          My main responsabilities are to implement new features using React and update/create
+          new features in the existing API using NodeJS."
           technologies="HTML, CSS, JavaScript, Typescript, React, ElasticUI, JIRA, Github, OpenSearch, OpenSearch Dashboards"
         />
         <WorkExperienceCard
