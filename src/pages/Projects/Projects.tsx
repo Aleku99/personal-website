@@ -21,6 +21,7 @@ const Projects: React.FC = () => {
       >
         <Typography
           variant="h4"
+          align="center"
           sx={
             darkMode
               ? { color: "white", marginBottom: "2rem" }

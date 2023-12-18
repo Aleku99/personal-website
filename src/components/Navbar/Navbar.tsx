@@ -23,12 +23,14 @@ interface Props {
   isProfilePage?: boolean;
   isExperiencePage?: boolean;
   isProjectsPage?: boolean;
+  isContactPage?: boolean;
 }
 
 const Navbar: React.FC<Props> = ({
   isProfilePage,
   isExperiencePage,
   isProjectsPage,
+  isContactPage,
 }) => {
   const [isNavbarMenuOpen, setIsNavbarMenuOpen] = useState(false);
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
@@ -149,6 +151,28 @@ const Navbar: React.FC<Props> = ({
               }
             >
               Projects
+            </Typography>
+          </Link>
+        </Grid>
+
+        <Grid item>
+          <Link to="/contact" style={navbarLinkStyle}>
+            <Typography
+              variant="h5"
+              component="div"
+              sx={
+                darkMode
+                  ? {
+                      ...darkNavbarTextStyle,
+                      color: isContactPage ? "#950740" : "white",
+                    }
+                  : {
+                      ...navbarTextStyle,
+                      color: isContactPage ? "#004A55" : "white",
+                    }
+              }
+            >
+              Contact
             </Typography>
           </Link>
         </Grid>
