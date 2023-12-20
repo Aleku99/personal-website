@@ -13,23 +13,6 @@ export const contactIconStyle = {
   height: "3rem",
 };
 
-export const inputStyle = {
-  padding: "1rem",
-  fontSize: "1.25rem",
-  width: 400,
-  maxWidth: "90vw",
-  border: "1px solid #e5e7eb",
-};
-
-export const inputDarkModeStyle = {
-  padding: "1rem",
-  fontSize: "1.25rem",
-  width: 400,
-  maxWidth: "90vw",
-  backgroundColor: "#1A1A1D",
-  border: "1px solid #1A1A1D",
-};
-
 export const textAreaStyle = {
   padding: "1rem",
   fontSize: "1.25rem",
@@ -38,11 +21,17 @@ export const textAreaStyle = {
   border: "1px solid #e5e7eb",
 };
 
-export const textAreaDarkModeStyle = {
-  padding: "1rem",
-  fontSize: "1.25rem",
-  width: 832,
-  maxWidth: "90vw",
-  backgroundColor: "#1A1A1D",
-  border: "1px solid #1A1A1D",
+export const submitButtonStyle = {
+  backgroundColor: "#85cdcb",
+  ":hover": {
+    backgroundColor: "#85cdcb",
+  },
+};
+
+export const submitButtonDarkModeStyle = {
+  backgroundColor: "#950740",
+  ":hover": {
+    backgroundColor: "#950740",
+    boxShadow: "1px 1px 6px 3px #1a1a1d",
+  },
 };

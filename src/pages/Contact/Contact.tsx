@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import React, { useContext } from "react";
 import NavBar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -6,10 +6,8 @@ import { DarkModeContext } from "../../context/darkModeContext";
 import {
   contactContentStyle,
   contactIconStyle,
-  inputDarkModeStyle,
-  inputStyle,
-  textAreaDarkModeStyle,
-  textAreaStyle,
+  submitButtonDarkModeStyle,
+  submitButtonStyle,
 } from "./styles";
 import "./styles.css";
 
@@ -65,24 +63,26 @@ const Contact: React.FC = () => {
               className={darkMode ? "inputDarkMode" : "inputLightMode"}
               id="name"
               placeholder="Name"
-              style={darkMode ? inputDarkModeStyle : inputStyle}
             />
             <input
               className={darkMode ? "inputDarkMode" : "inputLightMode"}
               id="email"
               placeholder="E-mail address"
-              style={darkMode ? inputDarkModeStyle : inputStyle}
             />
           </Box>
           <textarea
             className={darkMode ? "textareaDarkMode" : "textareaLightMode"}
             id="message"
             placeholder="Message"
-            style={
-              darkMode ? { ...textAreaDarkModeStyle } : { ...textAreaStyle }
-            }
           />
         </Box>
+        <Button
+          variant="contained"
+          size="large"
+          sx={darkMode ? submitButtonDarkModeStyle : submitButtonStyle}
+        >
+          Submit
+        </Button>
       </Box>
       <Footer />
     </Box>
