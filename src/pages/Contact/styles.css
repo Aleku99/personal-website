@@ -1,0 +1,15 @@
+.inputLightMode {
+  outline: 1px solid #85cdcb;
+}
+
+.textareaLightMode {
+  outline: 1px solid #85cdcb;
+}
+
+.inputDarkMode {
+  outline: 1px solid #950740;
+}
+
+.textareaDarkMode {
+  outline: 1px solid #950740;
+}

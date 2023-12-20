@@ -1,15 +1,15 @@
 export const projectCardStyles = {
   color: "#004A55",
   backgroundColor: "#F5F5F5",
-  margin: "1rem",
-  width: "100%"
+  margin: "1rem 0",
+  width: "100%",
 };
 
 export const darkProjectCardStyles = {
   color: "white",
   backgroundColor: "#4e4e50",
-  margin: "1rem",
-  width: "100%"
+  margin: "1rem 0",
+  width: "100%",
 };
 
 export const projectCardContentStyling = {

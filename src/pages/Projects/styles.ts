@@ -4,5 +4,5 @@ export const projectsContentStyle = {
   justifyContent: "flex-start",
   alignItems: "center",
   minHeight: "90vh",
-  padding: "5rem 0",
+  padding: "5rem 1rem",
 };

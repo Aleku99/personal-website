@@ -3,7 +3,15 @@ import React, { useContext } from "react";
 import NavBar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { DarkModeContext } from "../../context/darkModeContext";
-import { contactContentStyle, contactIconStyle } from "./styles";
+import {
+  contactContentStyle,
+  contactIconStyle,
+  inputDarkModeStyle,
+  inputStyle,
+  textAreaDarkModeStyle,
+  textAreaStyle,
+} from "./styles";
+import "./styles.css";
 
 const Contact: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);
@@ -20,6 +28,7 @@ const Contact: React.FC = () => {
       >
         <Typography
           variant="h4"
+          align="center"
           sx={
             darkMode
               ? {
@@ -37,6 +46,43 @@ const Contact: React.FC = () => {
             alt="hello icon"
           ></img>
         </Typography>
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          flexDirection="column"
+          gap="2rem"
+        >
+          <Box
+            display="flex"
+            justifyContent="center"
+            flexDirection="row"
+            alignItems="center"
+            gap="2rem"
+            flexWrap="wrap"
+          >
+            <input
+              className={darkMode ? "inputDarkMode" : "inputLightMode"}
+              id="name"
+              placeholder="Name"
+              style={darkMode ? inputDarkModeStyle : inputStyle}
+            />
+            <input
+              className={darkMode ? "inputDarkMode" : "inputLightMode"}
+              id="email"
+              placeholder="E-mail address"
+              style={darkMode ? inputDarkModeStyle : inputStyle}
+            />
+          </Box>
+          <textarea
+            className={darkMode ? "textareaDarkMode" : "textareaLightMode"}
+            id="message"
+            placeholder="Message"
+            style={
+              darkMode ? { ...textAreaDarkModeStyle } : { ...textAreaStyle }
+            }
+          />
+        </Box>
       </Box>
       <Footer />
     </Box>
