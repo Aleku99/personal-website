@@ -22,10 +22,10 @@ export const darkVspLinkStyle = {
 export const profileContentStyle = {
   display: "flex",
   flexDirection: "column",
-  justifContent: "flex-start",
+  justifyContent: "flex-start",
   alignItems: "center",
   minHeight: "90vh",
-  padding: "5rem 0",
+  padding: "5rem 1rem",
 };
 
 export const githubButtonStyle = {

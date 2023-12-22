@@ -5,6 +5,7 @@ import NoMatch from "./pages/NoMatch";
 import Profile from "./pages/Profile";
 import Projects from "./pages/Projects";
 import { DarkModeContext } from "./context/darkModeContext";
+import Contact from "./pages/Contact";
 
 const getDarkModeFromLocalStorage = () => {
   const darkModeString = localStorage.getItem("darkMode");
@@ -39,6 +40,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Profile />}></Route>
         <Route path="experience" element={<Experience />}></Route>
         <Route path="projects" element={<Projects />}></Route>
+        <Route path="contact" element={<Contact />}></Route>
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </DarkModeContext.Provider>

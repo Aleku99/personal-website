@@ -1,0 +1,64 @@
+.inputLightMode {
+  padding: 1rem;
+  font-size: 1.25rem;
+  width: 400px;
+  max-width: 90vw;
+  border: 1px solid #e5e7eb;
+}
+
+.inputLightMode:focus {
+  outline: 1px solid #85cdcb;
+}
+
+.inputDarkMode {
+  padding: 1rem;
+  font-size: 1.25rem;
+  width: 400px;
+  max-width: 90vw;
+  background-color: #1a1a1d;
+  border: 1px solid #1a1a1d;
+  color: white;
+}
+
+.inputDarkMode:focus {
+  outline: 1px solid #950740;
+}
+
+.textareaLightMode {
+  padding: 1rem;
+  font-size: 1.25rem;
+  width: 832px;
+  border: 1px solid #e5e7eb;
+  resize: none;
+  height: 200px;
+}
+
+.textareaLightMode:focus {
+  outline: 1px solid #85cdcb;
+}
+
+.textareaDarkMode {
+  padding: 1rem;
+  font-size: 1.25rem;
+  width: 832px;
+  background-color: #1a1a1d;
+  border: 1px solid #1a1a1d;
+  resize: none;
+  color: white;
+  height: 200px;
+}
+
+.textareaDarkMode:focus {
+  outline: 1px solid #950740;
+}
+
+@media only screen and (max-width: 863px) {
+  .textareaLightMode {
+    width: 400px;
+    max-width: 90vw;
+  }
+  .textareaDarkMode {
+    width: 400px;
+    max-width: 90vw;
+  }
+}
