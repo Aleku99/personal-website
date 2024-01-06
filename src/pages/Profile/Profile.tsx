@@ -8,13 +8,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import SkillsItem from "../../components/SkillsItem";
 import {
   cvButtonStyle,
-  darkVspLinkStyle,
+  darkJobLinkStyle,
   githubButtonStyle,
   linkedInButtonStyle,
   profileButtonsWrapper,
   profileContentStyle,
   profilePictureStyle,
-  vspLinkStyle,
+  jobLinkStyle,
 } from "./styles";
 import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
@@ -77,12 +77,12 @@ const Profile: React.FC = () => {
         >
           Currently I'm working as a front-end developer&nbsp;
           <a
-            href="https://victorysquarepartners.com/"
+            href="https://www.doctari.ro/"
             target="_blank"
             rel="noreferrer"
-            style={darkMode ? darkVspLinkStyle : vspLinkStyle}
+            style={darkMode ? darkJobLinkStyle : jobLinkStyle}
           >
-            @Victory Square Partners
+            @Doctari Group
           </a>
         </Typography>
         <Box

@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
         />
         <ProjectCard
           title="looties"
-          description="looties is a new Web3 game that offers a variety of NFT loot boxes that have the chance of dropping highly collectible NFTs. Users could enter the app, log in using one of their Solana Crypto Wallets, deposit Solana(SOL) and NFTs from their wallets, buy app tokens using SOL, and create their own lootboxes. I have mainly worked to the front-end, where I implemented the app from the ground using React. I have also contributed to the back-end, where i wrote a few endpoints in the newly-created REST API."
+          description="looties is a new Web3 game that offers a variety of NFT loot boxes that have the chance of dropping highly collectible NFTs. Users could enter the app, log in using one of their Solana Crypto Wallets, deposit Solana(SOL) and NFTs from their wallets, buy app tokens using SOL, and create their own lootboxes. I have mainly worked to the front-end, where I implemented the app from the ground using React. I have also contributed to the back-end, where i wrote a few endpoints in the newly-created NestJS REST API."
           technologies="Typescript, React, Tailwind, NestJS, Prisma ORM, Linear, Gitlab, Digital Ocean"
         />
         <ProjectCard
