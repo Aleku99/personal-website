@@ -7,13 +7,13 @@ export const profilePictureStyle = {
   marginBottom: "2rem",
 };
 
-export const vspLinkStyle = {
+export const jobLinkStyle = {
   color: "#004A55",
   textDecoration: "none",
   fontWeight: "bold",
 };
 
-export const darkVspLinkStyle = {
+export const darkJobLinkStyle = {
   color: "#950740",
   textDecoration: "none",
   fontWeight: "bold",

@@ -31,12 +31,21 @@ const Experience: React.FC = () => {
           Work experience
         </Typography>
         <WorkExperienceCard
+          title="Full Stack Developer"
+          company="Doctari Group"
+          location="Timisoara"
+          startDate="03.01.2024"
+          endDate="present"
+          description="At Doctari Group I am working on a web app responsible for creating job matches between clinics/hospitals and different types of candidates. My main responsibilities include implementing new features based on JIRA requirements, writing unit tests, refactoring existing code and fixing bugs."
+          technologies="React, TypeScript, NodeJS, AWS, MongoDB, Salesforce"
+        />
+        <WorkExperienceCard
           title="Front-End Developer"
           company="Victory Square Partners"
           location="Timisoara"
           startDate="12.09.2022"
           endDate="29.11.2023"
-          description="At Victory Square Partners I'm  worked for an external client. Our team is
+          description="At Victory Square Partners I have worked for an external client. Our team is
           developing a web application that's responsible with data ingestion from different clients.
           My main responsabilities are to implement new features using React and update/create
           new features in the existing API using NodeJS."
@@ -48,7 +57,7 @@ const Experience: React.FC = () => {
           location="Timisoara"
           startDate="10.01.2022"
           endDate="05.09.2022"
-          description="During my time in Endava I've worked for an external client, on a chatbot that would interact with people in case they would like to claim their insurance in case of a car incident. My main responsabilities were to implement new features in React based on JIRA requirements, fixing bugs and creating unit tests using Jest and React Testing Library."
+          description="During my time in Endava I've worked for an external client, on a chatbot that would interact with people in case they would like to claim their insurance in case of a car incident. My main responsibilities were to implement new features in React based on JIRA requirements, fixing bugs and creating unit tests using Jest and React Testing Library."
           technologies="HTML, CSS, JavaScript, Typescript, React, MaterialUI, MobX-state-tree, Jest, React Testing Library, JIRA, Github "
         />
         <WorkExperienceCard
