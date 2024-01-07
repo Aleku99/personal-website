@@ -40,7 +40,7 @@ const Experience: React.FC = () => {
           technologies="React, TypeScript, NodeJS, AWS, MongoDB, Salesforce"
         />
         <WorkExperienceCard
-          title="Front-End Developer"
+          title="Full Stack Developer"
           company="Victory Square Partners"
           location="Timisoara"
           startDate="12.09.2022"
