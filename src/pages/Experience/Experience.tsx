@@ -12,21 +12,11 @@ const Experience: React.FC = () => {
   return (
     <Box display="flex" flexDirection={"column"}>
       <NavBar isExperiencePage />
-      <Box
-        sx={
-          darkMode
-            ? { ...experienceContentStyle, backgroundColor: "black" }
-            : experienceContentStyle
-        }
-      >
+      <Box sx={darkMode ? { ...experienceContentStyle, backgroundColor: "black" } : experienceContentStyle}>
         <Typography
           variant="h4"
           align="center"
-          sx={
-            darkMode
-              ? { color: "white", marginBottom: "2rem" }
-              : { color: "#004A55", marginBottom: "2rem" }
-          }
+          sx={darkMode ? { color: "white", marginBottom: "2rem" } : { color: "#004A55", marginBottom: "2rem" }}
         >
           Work experience
         </Typography>
@@ -61,12 +51,12 @@ const Experience: React.FC = () => {
           technologies="HTML, CSS, JavaScript, Typescript, React, MaterialUI, MobX-state-tree, Jest, React Testing Library, JIRA, Github "
         />
         <WorkExperienceCard
-          title="Software Tester"
+          title="Software Test Engineer"
           company="Hella"
           location="Timisoara"
           startDate="05.03.2020"
           endDate="07.01.2022"
-          description="During my time in Hella I worked on RLS5 sensor. It was sending data regarding rain, light, solar load, humidity and was responsible for the visibility of the head-up display. My main responsibilities included unit testing using RT-Tester and VectorCast, blackbox and whitebox testing, functional and nonfunctional testing using CANoe/CAPL scripting and WinIdea/IAR, continous test integration in Gitlab, create error reports based on errors found in the SW and offer support for other colleagues."
+          description="During my time in Hella I worked on RLS5 sensor. It was sending data regarding rain, light, solar load, humidity and was responsible for the visibility of the head-up display. My main responsibilities included unit testing using RT-Tester and VectorCast, blackbox and whitebox testing, functional and nonfunctional testing using CANoe/CAPL scripting and WinIdea/IAR, continuous test integration in Gitlab, create error reports based on errors found in the SW and offer support for other colleagues."
           technologies="C,  Canoe, CAPL, Gitlab, DOORS, Gitlab "
         />
       </Box>
