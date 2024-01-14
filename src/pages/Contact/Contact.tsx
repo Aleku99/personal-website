@@ -11,7 +11,9 @@ import {
 } from "./styles";
 import "./styles.css";
 import toast, { Toaster } from "react-hot-toast";
-import emailjs from "@emailjs/browser";
+import axios from "axios";
+
+const CREATE_MESSAGE_URL = process.env.REACT_APP_API_URL + "/message";
 
 const Contact: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);
@@ -22,25 +24,25 @@ const Contact: React.FC = () => {
   const validateInputs = (): boolean => {
     // empty fields checks
     if (name.trim() === "") {
-      toast.error("Numele trebuie introdus inainte de a ne trmite un mesaj");
+      toast.error("Name can't be empty");
       return false;
     }
     if (email.trim() === "") {
       toast.error(
-        "Email-ul dumneavoastra trebuie introdus inainte de a ne trmite un mesaj"
+        "E-mail can't be empty"
       );
       return false;
     }
 
     //message minimum length check
     if (message.trim() === "" || message.length < 30) {
-      toast.error("Mesajul trebuie sa aibe lungimea minima de 30 de caractere");
+      toast.error("Message must have at least 30 characters");
       return false;
     }
 
     // email check
     if (!/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/.test(email)) {
-      toast.error("Email-ul introdus este invalid");
+      toast.error("E-mail is invalid");
       return false;
     }
 
@@ -50,31 +52,25 @@ const Contact: React.FC = () => {
   const sendEmail = () => {
     const isMailValid = validateInputs();
     if (isMailValid) {
-      const templateParams = {
-        user_name: name,
-        user_email: email,
-        message: message,
-      };
-      emailjs
-        .send(
-          process.env.REACT_APP_EMAILJS_SERVICE_ID!,
-          process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
-          templateParams,
-          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-        )
+      axios
+        .post(CREATE_MESSAGE_URL, {
+          name,
+          email,
+          message,
+        })
         .then(
-          (result) => {
-            if (result.status === 200) {
-              toast.success("Mesajul a fost trimis cu succes");
+          (result: any) => {
+            if (result.status === 201) {
+              toast.success("Message sent successfully");
               setEmail("");
               setMessage("");
               setName("");
             } else {
-              toast.error("Eroare trimitere mesaj");
+              toast.error("Error");
             }
           },
           () => {
-            toast.error("Eroare trimitere mesaj");
+            toast.error("Error");
           }
         );
     }
