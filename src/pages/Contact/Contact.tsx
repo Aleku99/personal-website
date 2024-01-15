@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
     }
 
     //message minimum length check
-    if (message.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').trim().length < 30) {
+    if (message.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>{}[\]\\\\/]/gi, '').trim().length < 30) {
       toast.error("Message must have at least 30 characters");
       return false;
     }
