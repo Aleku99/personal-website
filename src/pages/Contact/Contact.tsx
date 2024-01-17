@@ -65,7 +65,11 @@ const Contact: React.FC = () => {
               setEmail("");
               setMessage("");
               setName("");
-            } else {
+            }
+            else if (result.status === 403) {
+              toast.error("Error: spam detected (more than 5 messages in an hour)")
+            }
+            else {
               toast.error("Error");
             }
           },
