@@ -28,14 +28,15 @@ const Contact: React.FC = () => {
       return false;
     }
     if (email.trim() === "") {
-      toast.error(
-        "E-mail can't be empty"
-      );
+      toast.error("E-mail can't be empty");
       return false;
     }
 
     //message minimum length check
-    if (message.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>{}[\]\\\\/]/gi, '').trim().length < 30) {
+    if (
+      message.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>{}[\]\\\\/]/gi, "").trim()
+        .length < 30
+    ) {
       toast.error("Message must have at least 30 characters");
       return false;
     }
@@ -49,34 +50,28 @@ const Contact: React.FC = () => {
     return true;
   };
 
-  const sendEmail = () => {
+  const sendEmail = async () => {
     const isMailValid = validateInputs();
     if (isMailValid) {
-      axios
-        .post(CREATE_MESSAGE_URL, {
+      try {
+        const res = await axios.post(CREATE_MESSAGE_URL, {
           name,
           email,
           message,
-        })
-        .then(
-          (result: any) => {
-            if (result.status === 201) {
-              toast.success("Message sent successfully");
-              setEmail("");
-              setMessage("");
-              setName("");
-            }
-            else if (result.status === 403) {
-              toast.error("Error: spam detected (more than 5 messages in an hour)")
-            }
-            else {
-              toast.error("Error");
-            }
-          },
-          () => {
-            toast.error("Error");
-          }
-        );
+        });
+        if (res.status === 201) {
+          toast.success("Message sent successfully");
+          setEmail("");
+          setMessage("");
+          setName("");
+        }
+      } catch (err: any) {
+        if (err.response.status === 403) {
+          toast.error("Error: spam detected (more than 5 messages in an hour)");
+        } else {
+          toast.error("Error");
+        }
+      }
     }
   };
 
