@@ -11,9 +11,7 @@ import {
 } from "./styles";
 import "./styles.css";
 import toast, { Toaster } from "react-hot-toast";
-import axios from "axios";
-
-const CREATE_MESSAGE_URL = process.env.REACT_APP_API_URL + "/message";
+import emailjs from "@emailjs/browser";
 
 const Contact: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);
@@ -53,25 +51,33 @@ const Contact: React.FC = () => {
   const sendEmail = async () => {
     const isMailValid = validateInputs();
     if (isMailValid) {
-      try {
-        const res = await axios.post(CREATE_MESSAGE_URL, {
-          name,
-          email,
-          message,
-        });
-        if (res.status === 201) {
-          toast.success("Message sent successfully");
-          setEmail("");
-          setMessage("");
-          setName("");
-        }
-      } catch (err: any) {
-        if (err.response.status === 403) {
-          toast.error("Error: spam detected (more than 5 messages in an hour)");
-        } else {
-          toast.error("Error");
-        }
-      }
+      const templateParams = {
+        user_name: name,
+        user_email: email,
+        message: message,
+      };
+      emailjs
+        .send(
+          process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
+          templateParams,
+          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            if (result.status === 200) {
+              toast.success("Message sent successfully");
+              setEmail("");
+              setMessage("");
+              setName("");
+            } else {
+              toast.error("Error");
+            }
+          },
+          () => {
+            toast.error("Error");
+          }
+        );
     }
   };
 
