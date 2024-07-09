@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
         </Typography>
         <ProjectCard
           title="confectii-metalice"
-          description="This project is currently a work in progress. I was contracted to build a presentation website for someone who opened a new business. The app is front-end only, has 4 pages: a home page, services page,  gallery page and contact page."
+          description="I was contracted to build a presentation website for someone who opened a new business. The app is front-end only, has 4 pages: a home page, services page,  gallery page and contact page."
           technologies="Typescript, React, Tailwind, EmailJS, Netlify"
           githubUrl="https://github.com/Aleku99/gelato-divino"
           websiteUrl="https://confectiimetalicecs.ro/"
