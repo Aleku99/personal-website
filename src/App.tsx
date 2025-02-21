@@ -37,7 +37,7 @@ const App: React.FC = () => {
   return (
     <DarkModeContext.Provider value={{ darkMode, setDarkMode }}>
       <Routes>
-        <Route path="/" element={<Profile />}></Route>
+        <Route path="" element={<Profile />}></Route>
         <Route path="experience" element={<Experience />}></Route>
         <Route path="projects" element={<Projects />}></Route>
         <Route path="contact" element={<Contact />}></Route>

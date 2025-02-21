@@ -75,7 +75,7 @@ const Profile: React.FC = () => {
           align="center"
           sx={darkMode ? { color: "white" } : { color: "#004A55" }}
         >
-          Currently I'm working as a front-end developer&nbsp;
+          Currently I'm working as a full-stack developer&nbsp;
           <a
             href="https://www.doctari.ro/"
             target="_blank"
