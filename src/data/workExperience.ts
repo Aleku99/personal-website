@@ -16,8 +16,9 @@ export const workExperience: WorkExperience[] = [
     startDate: "03.01.2024",
     endDate: "present",
     description:
-      "At Doctari Group I am working on a web app responsible for creating job matches between clinics/hospitals and different types of candidates. My main responsibilities include implementing new features based on JIRA requirements, writing unit tests, refactoring existing code and fixing bugs.",
-    technologies: "React, TypeScript, NodeJS, AWS, MongoDB, Salesforce",
+      "At Doctari Group I am working on a web application that is responsible for helping customers (clinics or hospitals) with personnel placement (doctors, caregivers and psychotherapists) and shift planning. My main responsibilities are implementing new features based on JIRA requirements, writing unit tests, refactoring existing code, fixing bugs, doing code reviews and contributing to Agile ceremonies.",
+    technologies:
+      "React, TypeScript, NodeJS, AWS, MongoDB, Salesforce, Usersnap, d.velop",
   },
   {
     title: "Full Stack Developer",
