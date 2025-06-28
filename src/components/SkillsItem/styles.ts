@@ -1,7 +1,8 @@
 export const skillItemStyles = {
   display: "flex",
-  justifyContent: "flex-start",
+  justifyContent: "flex-center",
   flexDirection: "row",
+  alignItems: "center",
 };
 export const skillsItemIconStyle = {
   height: "1rem",
@@ -12,5 +13,5 @@ export const skillsItemTextStyle = {
   color: "#004A55",
 };
 export const darkSKillsItemTextStyle = {
-  color: 'white'
-}
+  color: "white",
+};

@@ -68,7 +68,7 @@ const Profile: React.FC = () => {
           align="center"
           sx={darkMode ? { color: "white" } : { color: "#004A55" }}
         >
-          I'm a Full Stack Web Developer who builds web applications that run
+          I'm a Full Stack Developer who builds web applications that run
           across platforms and devices!
         </Typography>
         <Typography
@@ -218,6 +218,8 @@ const Profile: React.FC = () => {
               <SkillsItem name="Heroku" icon="assets/herokuLogo.png" />
               <SkillsItem name="DigitalOcean" icon="assets/digitalOcean.png" />
               <SkillsItem name="Vercel" icon="assets/vercel.png" />
+              <SkillsItem name="AWS" icon="assets/aws.png" />
+              <SkillsItem name="OpenSearch" icon="assets/opensearch.png" />
             </Box>
           </Grid>
         </Grid>
