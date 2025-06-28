@@ -29,7 +29,6 @@ export const projects: Project[] = [
       "This project was done for an acquaintance that decided to open a car detailing business and needed a website for it.",
     technologies: "HTML, CSS, JavaScript, Typescript, NextJS, TailwindCSS",
     githubUrl: "https://github.com/Aleku99/luxury-detailing-fe",
-    websiteUrl: "https://www.luxurydetailing.ro/",
   },
   {
     title: "personal-website",

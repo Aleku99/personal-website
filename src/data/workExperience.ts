@@ -16,7 +16,7 @@ export const workExperience: WorkExperience[] = [
     startDate: "03.01.2024",
     endDate: "present",
     description:
-      "At Doctari Group I am working on a web application that is responsible for helping customers (clinics or hospitals) with personnel placement (doctors, caregivers and psychotherapists) and shift planning. My main responsibilities are implementing new features based on JIRA requirements, writing unit tests, refactoring existing code, fixing bugs, doing code reviews and contributing to Agile ceremonies.",
+      "At Doctari Group I am working on a web application that is responsible for helping customers (clinics or hospitals) with personnel placement (doctors, caregivers and psychotherapists) and shift planning. My role involves delivering end-to-end features based on product and user needs, with a strong focus on code quality, maintainability, and user impact.",
     technologies:
       "React, TypeScript, NodeJS, AWS, MongoDB, Salesforce, Usersnap, d.velop",
   },
@@ -27,7 +27,7 @@ export const workExperience: WorkExperience[] = [
     startDate: "12.09.2022",
     endDate: "29.11.2023",
     description:
-      "At Victory Square Partn ers I have worked for an external client. Our team isdeveloping a web application that's responsible with data ingestion from different clients.My main responsabilities are to implement new features using React and update/createnew features in the existing API using NodeJS.",
+      "At Victory Square Partners I have worked for an external client. Our team was developing a web application that was responsible with data ingestion. The application we worked on was an OpenSearch Dashboards fork, which we customized after our client's requirements. My main responsabilities were to implement new features with React for the front-end app and using NodeJS for the existing API.",
     technologies:
       "HTML, CSS, JavaScript, Typescript, React, ElasticUI, JIRA, Github, OpenSearch, OpenSearch Dashboards",
   },
