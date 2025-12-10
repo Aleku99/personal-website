@@ -8,13 +8,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import SkillsItem from "../../components/SkillsItem";
 import {
   cvButtonStyle,
-  darkJobLinkStyle,
   githubButtonStyle,
   linkedInButtonStyle,
   profileButtonsWrapper,
   profileContentStyle,
   profilePictureStyle,
-  jobLinkStyle,
 } from "./styles";
 import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
@@ -68,22 +66,13 @@ const Profile: React.FC = () => {
           align="center"
           sx={darkMode ? { color: "white" } : { color: "#004A55" }}
         >
-          I'm a Full Stack Developer who builds web applications that run
-          across platforms and devices!
+          I am Full Stack Developer with TypeScript focus and a passion for building impactful products.
         </Typography>
         <Typography
           align="center"
           sx={darkMode ? { color: "white" } : { color: "#004A55" }}
         >
-          Currently I'm working as a full-stack developer&nbsp;
-          <a
-            href="https://www.doctari.ro/"
-            target="_blank"
-            rel="noreferrer"
-            style={darkMode ? darkJobLinkStyle : jobLinkStyle}
-          >
-            @Doctari Group
-          </a>
+           I'm driven by continuous improvement, always looking to grow, and bring value through thoughtful product development.
         </Typography>
         <Box
           display="flex"
