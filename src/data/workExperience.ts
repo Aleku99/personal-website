@@ -14,9 +14,9 @@ export const workExperience: WorkExperience[] = [
     company: "Doctari Group",
     location: "Timisoara",
     startDate: "03.01.2024",
-    endDate: "present",
+    endDate: "10.12.2025",
     description:
-      "At Doctari Group I am working on a web application that is responsible for helping customers (clinics or hospitals) with personnel placement (doctors, caregivers and psychotherapists) and shift planning. My role involves delivering end-to-end features based on product and user needs, with a strong focus on code quality, maintainability, and user impact.",
+      "At Doctari Group I have worked on a web application that is responsible for helping customers (clinics or hospitals) with personnel placement (doctors, caregivers and psychotherapists) and shift planning. My role involved delivering end-to-end features based on product and user needs, with a strong focus on code quality, maintainability, and user impact.",
     technologies:
       "React, TypeScript, NodeJS, AWS, MongoDB, Salesforce, Usersnap, d.velop",
   },
