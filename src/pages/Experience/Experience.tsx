@@ -40,8 +40,9 @@ const Experience: React.FC = () => {
             endDate,
             description,
             technologies,
-          }) => (
+          }, index) => (
             <WorkExperienceCard
+              key={`experience_${index}`}
               title={title}
               company={company}
               location={location}

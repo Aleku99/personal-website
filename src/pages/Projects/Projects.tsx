@@ -39,8 +39,9 @@ const Projects: React.FC = () => {
             githubUrl,
             githubUrl2,
             websiteUrl,
-          }) => (
+          }, index) => (
             <ProjectCard
+              key={`project_${index}`}
               title={title}
               description={description}
               technologies={technologies}

@@ -10,6 +10,15 @@ interface WorkExperience {
 
 export const workExperience: WorkExperience[] = [
   {
+    title: "Senior Typescript Developer",
+    company: "Banqup",
+    location: "Timisoara",
+    startDate: "12.01.2026",
+    endDate: "Present",
+    description: "-",
+    technologies: "Typescript, React, Express, AWS, Docker, SQL",
+  },
+  {
     title: "Full Stack Developer",
     company: "Doctari Group",
     location: "Timisoara",
